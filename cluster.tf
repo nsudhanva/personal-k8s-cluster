@@ -1,18 +1,18 @@
-resource "digitalocean_kubernetes_cluster" "personal" {
-  name    = "sudhanva-personal"
+resource "digitalocean_kubernetes_cluster" "personal_cluster" {
+  name    = "personal-cluster"
   region  = "nyc1"
   version = "1.21.5-do.0"
 
   node_pool {
     name       = "default"
-    size       = "s-4vcpu-8gb"
+    size       = "s-2vcpu-4gb"
     auto_scale = true
     min_nodes  = 1
-    max_nodes  = 3
+    max_nodes  = 5
 
     tags = [
       "personal",
-      "kubeflow"
+      "cluster"
     ]
 
   }
