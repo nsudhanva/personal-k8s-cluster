@@ -5,7 +5,7 @@ resource "digitalocean_kubernetes_cluster" "personal_cluster" {
 
   node_pool {
     name       = "default"
-    size       = "s-2vcpu-4gb"
+    size       = "s-1vcpu-2gb"
     auto_scale = true
     min_nodes  = 1
     max_nodes  = 5
