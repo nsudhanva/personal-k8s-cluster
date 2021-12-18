@@ -19,7 +19,7 @@ spec:
               service:
                 name: sudhanva-v1-ghost
                 port:
-                  number: 80
+                  number: 443
             pathType: Prefix
   tls:
     - hosts:
