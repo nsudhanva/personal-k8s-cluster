@@ -1,0 +1,19 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: sudhanva-me
+  namespace: ghost
+spec:
+  # The secret name where cert-manager should store the signed certificate
+  secretName: sudhanva-me-tls
+  dnsNames:
+    - sudhanva.me
+  # Duation of the certificate
+  duration: 168h
+  # Renew a day before the certificate expiration
+  renewBefore: 24h
+  # Reference the Origin CA Issuer you created above, which must be in the same namespace.
+  issuerRef:
+    group: cert-manager.k8s.cloudflare.com
+    kind: OriginIssuer
+    name: prod-issuer

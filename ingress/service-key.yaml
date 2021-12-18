@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  key: djEuMC0yYjE5NGJmMDc1N2RhZDBjZWZiMjRkZmItYzYyOGQ1OTU0YjA1ZWQ0YjYxMTI0YjQyN2JiNDAzYmE2OTUyYzE5YThhYzNkYWY0MmQ1NzM5MjcwNGY3OTZlZDQ1ZTg4ZTVkNDRhNzU0ZTY1ZTFjZTQ3OTU2NzUzY2I3NmFiZThlOWUzOGQzZWI2YmJmZGMwZDhkOTI1YmM0ZmU1YmNlNGM1NjdjNjhlMg==
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: service-key
+  namespace: ghost
