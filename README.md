@@ -15,8 +15,8 @@ My personal kubernetes cluster. Hosts my personal projects.
 * `k apply -f issuer.yaml`
 * `k get originissuer.cert-manager.k8s.cloudflare.com prod-issuer -o json -n ghost | jq .status.condition`
 * `k apply -f ingress.yaml`
-* `helm install sudhanva-v1 bitnami/ghost --namespace ghost --set service.type=ClusterIP,ghostHost="sudhanva.me",ghostEnableHttps=true,ghostProtocol="https",ghostPassword="PASSWORD",smtpHost="email-smtp.us-east-1.amazonaws.com",smtpPort=25,smtpUser=USER,smtpService="SES",smtpPassword=PASSWORD,mariadb.auth.rootPassword="PASSWORD",mariadb.auth.password="PASSWORD"`
-
+* `helm install sudhanva-v1 bitnami/ghost --namespace ghost --set service.type=ClusterIP,ghostHost="sudhanva.me",ghostEnableHttps=true,ghostProtocol="https",ghostPassword="PASSWORD",mariadb.auth.rootPassword="PASSWORD",mariadb.auth.password="PASSWORD"`
+* `helm upgrade sudhanva-v1 bitnami/ghost --namespace ghost --set service.type=ClusterIP,ghostHost="sudhanva.me",ghostEnableHttps=true,ghostProtocol="https"`
 ## List Of Selected Personal projects
 * [Sudhanva's Personal Website](https://sudhanva.me)
   * Ghost CMS, Stripe API for Payments and Mailgun for newsletters
