@@ -1,7 +1,8 @@
 resource "digitalocean_kubernetes_cluster" "personal_cluster" {
   name    = "personal-cluster"
   region  = "nyc1"
-  version = "1.21.5-do.0"
+  version = "1.25.4-do.0"
+  auto_upgrade = true
 
   node_pool {
     name       = "default"
